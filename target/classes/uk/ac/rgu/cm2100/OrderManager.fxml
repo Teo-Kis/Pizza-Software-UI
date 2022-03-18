@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uk.ac.rgu.cm2100.OrderManagerController">
+    <stylesheets>
+        <URL value="@/styles/ordermanager.css" />
+    </stylesheets>
+    <children>
+      <Button fx:id="btnBacktoHome" layoutX="24.0" layoutY="361.0" mnemonicParsing="false" onAction="#btnBacktoHomeClicked" text="Back to the Welcome Page" />
+      <ListView fx:id="lstPrevOrders" layoutX="31.0" layoutY="92.0" prefHeight="200.0" prefWidth="182.0" />
+      <Accordion fx:id="accPrevOrders" layoutX="280.0" layoutY="92.0" />
+      <Label fx:id="lblOrderDetails" layoutX="351.0" layoutY="92.0" prefHeight="200.0" prefWidth="194.0" text="Your order's details will be displayed here" textAlignment="CENTER" wrapText="true" />
+      <HBox fx:id="boxButtons" layoutX="310.0" layoutY="261.0" prefHeight="100.0" prefWidth="256.0" />
+      <Button fx:id="btnOrderdetails" layoutX="247.0" layoutY="135.0" mnemonicParsing="false" onMouseClicked="#btnOrderdetailsClicked" prefHeight="92.0" prefWidth="91.0" text="Show Order Details" wrapText="true" />
+      <DialogPane fx:id="txtTitle" headerText="Order Manager" layoutX="244.0" layoutY="43.0" prefHeight="31.0" prefWidth="111.0" style="-fx-background-color: turqoise;" stylesheets="@../../../../styles/default.css" />
+   </children>
+</AnchorPane>

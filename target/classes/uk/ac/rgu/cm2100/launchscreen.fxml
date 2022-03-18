@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../../../../styles/default.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uk.ac.rgu.cm2100.LaunchscreenController">
+   <children>
+      <Button fx:id="btnOrderManager" layoutX="405.0" layoutY="187.0" mnemonicParsing="false" onAction="#btnOrderManagerClicked" text="Order Manager" textAlignment="CENTER" />
+      <Button fx:id="btnMenuManager" layoutX="98.0" layoutY="187.0" mnemonicParsing="false" onAction="#btnMenuManagerClicked" text="Menu Manager" textAlignment="CENTER" />
+      <DialogPane fx:id="txtWelcome" contentText="Please choose from the following options:" headerText="Welcome!" layoutX="153.0" layoutY="66.0" prefHeight="72.0" prefWidth="305.0" style="-fx-background-color: turqoisse;" stylesheets="@../../../../styles/default.css" />
+   </children>
+</AnchorPane>
